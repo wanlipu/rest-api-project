@@ -8,9 +8,14 @@ print (sum(grades)/len(grades))
 
 tuple_grades = (77, 80, 90) # immutable
 print (tuple_grades)
+print (len(tuple_grades))
+print (sum(tuple_grades)/len(tuple_grades))
+
 
 set_grades = {77, 80, 90}
 print (set_grades)
+print (len(set_grades))
+print (sum(set_grades)/len(set_grades))
 
 
 grades.append(100)
