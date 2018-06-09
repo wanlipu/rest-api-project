@@ -18,11 +18,15 @@ def who_do_you_know():
     # Ask the user for a list of people they know
     # Split the string into a list
     # Return that list
-    names = input("Please type the list of names of people you know, and separate by space: ")
-    names_list = names.split()
-    return names_list
+    names = input("Please type the list of names of people you know, and separate by comma: ")
+    names_list = names.split(",")
+    names_without_spaces = []
+    for name in names_list:
+        names_without_spaces.append(name.strip())
+    return names_without_spaces
 
 names = who_do_you_know()
+print (names)
 
 def ask_user(names):
     # Ask user for a name
